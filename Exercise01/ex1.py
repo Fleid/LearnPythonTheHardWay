@@ -1,5 +1,7 @@
 # cd ~/Documents/GitHub/LearnPythonTheHardWay/Exercise01/
 
+# -*- coding: utf-8 -*-
+
 print "Hello World!"
 print "Hello again"
 print "I like typing this"
