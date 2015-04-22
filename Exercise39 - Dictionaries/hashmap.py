@@ -1,6 +1,15 @@
 # cd ~/Documents/GitHub/LearnPythonTheHardWay/Exercise39
 # -*- coding: utf-8 -*-
 
+# On découpe le hashmap en buckets pour des soucis de performances!
+	# 1 hashmap fait 256 buckets
+	# Chaque clef qu'on insère on l'insère dans un bucket qu'on détermine via un modulo de son hash
+	# Dans ce bucket on a N slots, qui sont des couples clef/valeur
+
+# Dans le set, on décide de remplacer la valeur si la clef existe déjà
+	# On pourrait choisir d'append dans tous les cas: ce serait lent
+	# A la place on pourrait implémenter un troisième niveau de liste
+	
 def new(num_buckets=256):
 	"""Initializes a Map with the given number of buckets."""
 	aMap=[]

@@ -52,3 +52,4 @@ if not state:
 	
 # default values using ||= with the nil result
 print "The city for the state 'TX' is: %s" % hashmap.get(cities,'TX','Does not Exist')
+

@@ -4,6 +4,9 @@
 # Dictionaries, Dicts, Hashes...
 ## Keys can be string, number...
 
+#NB : les listes sont ordonnées, la clef est un int
+#NB : les dictionnaires ne sont pas ordonnés, la clef est open
+
 # create a mapping of state to abbreviation
 states = {
 	'Oregon': 'OR',
