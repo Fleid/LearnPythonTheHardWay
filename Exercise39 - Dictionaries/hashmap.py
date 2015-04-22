@@ -62,8 +62,8 @@ def delete(aMAp, key):
 			del bucket[i]
 			break
 def list(aMap):
-	"""Pronts out what's in the Map."""
+	"""Prints out what's in the Map."""
 	for bucket in aMap:
 		if bucket:
-			for k, v in nucket:
+			for k, v in bucket:
 				print k, v

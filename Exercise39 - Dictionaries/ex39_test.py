@@ -16,3 +16,39 @@ cities = hashmap.new()
 hashmap.set(cities, 'CA', 'San Francisco')
 hashmap.set(cities, 'MI', 'Detroit')
 hashmap.set(cities, 'FL', 'Jacksonville')
+
+# add some more cities
+hashmap.set(cities, 'NY', 'New York')
+hashmap.set(cities, 'OR', 'Portland')
+
+# print out some cities
+print '-' * 10
+print 'NY State has: %s' % hashmap.get(cities,'NY')
+print 'OR State has: %s' % hashmap.get(cities,'OR')
+
+# print out some states
+print '-' * 10
+print 'Michigan\'s abbreviation is: %s' % hashmap.get(states,'Michigan')
+print 'Florida\'s abbreviation is: %s' % hashmap.get(states,'Florida')
+
+# do it by using the state then cities dictionary
+print '-' * 10
+print "Michigan has: %s" % hashmap.get(cities, hashmap.get(states, 'Michigan'))
+print "Florida has: %s" % hashmap.get(cities, hashmap.get(states, 'Florida'))
+
+# print every state abbreviation
+print '-' * 10
+hashmap.list(states)
+
+# print every city in state
+print '-' * 10
+hashmap.list(cities)
+
+print '-' * 10
+state = hashmap.get(states,'Texas')
+
+if not state:
+	print "Sorry, no Texas"
+	
+# default values using ||= with the nil result
+print "The city for the state 'TX' is: %s" % hashmap.get(cities,'TX','Does not Exist')
