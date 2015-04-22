@@ -43,7 +43,7 @@ def set(aMap, key, value):
 	bucket = get_bucket(aMap, key)
 	i, k, v = get_slot(aMap, key)
 	
-	if i >= 0
+	if i >= 0:
 		# the key exists, replace it
 		bucket[i] = (key, value)
 	else:
@@ -65,5 +65,5 @@ def list(aMap):
 	"""Pronts out what's in the Map."""
 	for bucket in aMap:
 		if bucket:
-			for k, v in nucket
+			for k, v in nucket:
 				print k, v
