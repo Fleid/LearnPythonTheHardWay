@@ -4,8 +4,8 @@
 # Dictionaries, Dicts, Hashes...
 ## Keys can be string, number...
 
-#NB : les listes sont ordonnées, la clef est un int
-#NB : les dictionnaires ne sont pas ordonnés, la clef est open
+#NB : les listes sont ordonnées (pas triées), la clef est un int, syntaxe (,,)
+#NB : les dictionnaires ne sont pas ordonnés, la clef est open, syntaxe {:,:,:}
 
 # create a mapping of state to abbreviation
 states = {
