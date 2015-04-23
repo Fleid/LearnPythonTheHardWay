@@ -8,7 +8,7 @@
 
 # Dans le set, on décide de remplacer la valeur si la clef existe déjà
 	# On pourrait choisir d'append dans tous les cas: ce serait lent
-	# A la place on pourrait implémenter un troisième niveau de liste
+	# A la place on pourrait implémenter un troisième niveau de liste qui associe plusieurs valeurs à une clef
 	
 def new(num_buckets=256):
 	"""Initializes a Map with the given number of buckets."""
