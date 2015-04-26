@@ -44,10 +44,14 @@ class Engine(object):
 
 ##===============================================================================##
 		
+
+
 class Scene(object):
-	def enter(self):
-		print "This scene is not yet configured. Subclass it and implement enter()."
-        #exit(1)
+
+    def enter(self):
+        print "This scene is not yet configured. Subclass it and implement enter()."
+    	exit(1)
+
 
 class Death(Scene):
 
@@ -110,12 +114,12 @@ class Map(object):
 		self.start_scene = start_scene
 		
 	def next_scene(self, scene_name):
-		'''Retourne la méthode de la scène associée à son nom'''
+		#Retourne la méthode de la scène associée à son nom
 		val = Map.scenes.get(scene_name)
 		return val
 		
 	def opening_scene(self):
-		'''Retourne la méthode de la scène d'ouverture'''
+		#Retourne la méthode de la scène d'ouverture
 		return self.next_scene(self.start_scene)
 
 ##===============================================================================##	
