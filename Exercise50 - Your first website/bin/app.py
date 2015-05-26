@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Pour me lancer : python bin/app.py
+# Pour me lancer : python bin/app.py 8080
 
 import web
 
